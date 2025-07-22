@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home</title></head>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    .deep {
+      padding-top: 300px;
+      padding-left: 400px;
+    }
+
+    .self {
+      padding-left: 1100px;
+      font-size: large;
+      padding-top: 5px;
+      display: flex;
+      gap: 20px;
+    }
+
+    .self a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    .self a:hover {
+      color: blueviolet;
+    }
+
+    .bye {
+      padding-top: 150px;
+      text-align: center;
+    }
+
+    .bi {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 10px 0;
+    }
+
+    .bi a {
+      color: black;
+      font-size: 24px;
+    }
+
+    .bi a:hover {
+      opacity: 0.7;
+    }
+
+    .bi a:nth-child(1) svg {
+      color: #333; 
+    }
+
+    .bi a:nth-child(2) svg {
+      color: #0077B5;
+    }
+
+    .bi a:nth-child(3) svg {
+      color: #D44638; 
+    }
+
+    footer {
+      margin-top: 20px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #555;
+    }
+  </style>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+<body>
+
+  <div class="self"> 
+      <a href="/home">Home</a>
+      <a href="/about">About</a>
+      <a href="/education">Education</a>
+      <a href="/contact">Contact</a>
+      
+  </div>
+
+  <div class="deep">
+    <h2 style="font-size:40px;">Hi, I am Sanjay</h2>
+    <h4 style="font-size: 20px;">Full Stack Developer</h4>
+    <div>
+      <h4>Read more <a href="/contact">contact me</a> or
+      <a href="/about">about me</a></h4>
+    </div>
+  </div>
+
+  <div class="bye">
+    <div class="bi">
+      <a href="https://github.com/Sanjaym072002">
+        <i data-lucide="github"></i>
+      </a>
+      <a href="https://www.linkedin.com/feed/">
+        <i data-lucide="linkedin"></i>
+      </a>
+      <a href="mailto:sanjaym072002@gmail.com">
+        <i data-lucide="mail"></i>
+      </a>
+    </div>
+
+    <footer>
+      <p>© 2025 Sanjay</p>
+    </footer>
+  </div>
+
+  <script>
+    lucide.createIcons();
+  </script>
+
+</body>
+</html>

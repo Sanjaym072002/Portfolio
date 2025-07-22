@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff;
+      color: #111;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* nav {
+      padding: 20px 40px;
+      display: flex;
+      justify-content: flex-end;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    } */
+
+    .self {
+      padding-left: 1100px;
+      font-size: large;
+      padding-top: 5px;
+      display: flex;
+      gap: 20px;
+    }
+
+    .self a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    .self a:hover {
+      color: blueviolet;
+    }
+
+    .matrix {
+      text-align: center;
+      padding: 50px 0 10px;
+      padding-right: 1000px;
+    }
+
+    .matrix h1 {
+  font-size: 3em;
+  margin-bottom: 8px; 
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: #e5e5e5;
+  width: 1150px; /* adjust as needed */
+  margin-left: 190px;  /* fixed start at left */
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+
+    .about-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      padding: 0 10%;
+      gap: 40px;
+    }
+
+    .left {
+      text-align: center;
+    }
+
+    .deep {
+      width: 220px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .left h2 {
+      margin-top: 15px;
+      margin-bottom: 5px;
+    }
+
+    .left h5 {
+      margin: 0;
+      color: #666;
+      font-weight: 500;
+    }
+
+    .text-content {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .text-content p {
+      font-size: 18px;
+      line-height: 1.8;
+      margin-bottom: 16px;
+      color: #333;
+    }
+
+    .resume {
+      margin: 30px 0;
+    }
+
+    .resume a {
+      border: 2px solid greenyellow;
+      padding: 10px 16px;
+      text-decoration: none;
+      color: #333;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .resume a:hover {
+      background-color: greenyellow;
+      color: black;
+    }
+
+    .skills-section {
+      margin-top: 30px;
+    }
+
+    .skills-section h2 {
+      margin-bottom: 15px;
+    }
+
+    .skills {
+      list-style: none;
+      padding: 0;
+      font-weight: bold;
+    }
+
+    .skills li {
+      margin-bottom: 10px;
+      color: blueviolet;
+    }
+
+    .bye {
+      padding: 60px 0 30px;
+      text-align: center;
+    }
+
+    .bi {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 10px 0 20px;
+    }
+
+    .bi a {
+      font-size: 24px;
+      color: black;
+    }
+
+    .bi a:hover {
+      opacity: 0.7;
+    }
+
+    .bi a:nth-child(1) svg {
+      color: #333;
+    }
+
+    .bi a:nth-child(2) svg {
+      color: #0077B5;
+    }
+
+    .bi a:nth-child(3) svg {
+      color: #D44638;
+    }
+
+    footer {
+      font-size: 14px;
+      font-weight: 500;
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      .about-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .matrix h1 {
+        font-size: 2.4em;
+      }
+
+      .text-content {
+        padding: 0 20px;
+      }
+    }
+  </style>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <nav>
+    <div class="self">
+      <a href="/home">Home</a>
+      <a href="/about">About</a>
+      <a href="/education">Education</a>
+      <a href="/contact">Contact</a>
+    </div>
+  </nav>
+
+  <div class="matrix">
+    <h1>About</h1>
+    <hr>
+  </div>
+
+  <div class="about-container">
+    <div class="left">
+      <img src="/static/WhatsApp Image 2025-07-09 at 17.36.13_43f61e05.jpg" class="deep" alt="My Photo" />
+      <h2>Sanjay</h2>
+      <h5>Software Engineer</h5>
+    </div>
+
+    <div class="text-content">
+      <p>Hello! I'm Sanjay M, an enthusiastic and dedicated Full Stack Developer currently on an exciting journey to build real-world, end-to-end web applications...</p>
+      <p>I specialize in both Frontend and Backend development. On the frontend side, I work with HTML, CSS, JS, and React... On the backend, I’m learning Python (Flask), Node.js, and MySQL...</p>
+      <p>Right now, I’m focusing on strengthening my project-building skills, collaborating with others, and preparing myself for the professional tech industry. I also use Git, GitHub, Postman, and VS Code.</p>
+      <p>I love solving problems, learning new technologies, and building meaningful applications that solve real-world problems.</p>
+      <p>I’m excited to contribute to impactful projects and grow as a developer every day. Thank you for visiting my portfolio!</p>
+
+      <div class="resume">
+        <a href="/static/resume.pdf" target="_blank">Download Resume</a>
+      </div>
+
+      <div class="skills-section">
+        <h2>Skills</h2>
+        <ul class="skills">
+          <li>HTML / CSS / JavaScript</li>
+          <li>Python / Flask</li>
+          <li>MySQL / MongoDB</li>
+          <li>Git / GitHub</li>
+          <li>Responsive Design</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="bye">
+    <div class="bi">
+      <a href="https://github.com/Sanjaym072002">
+        <i data-lucide="github"></i>
+      </a>
+      <a href="https://www.linkedin.com/feed/">
+        <i data-lucide="linkedin"></i>
+      </a>
+      <a href="mailto:sanjaym072002@gmail.com">
+        <i data-lucide="mail"></i>
+      </a>
+    </div>
+    <footer>© 2025 Sanjay</footer>
+  </div>
+
+  <script>
+    lucide.createIcons();
+  </script>
+
+</body>
+</html>

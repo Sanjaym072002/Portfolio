@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact</title></head>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+     .self {
+      padding-left: 1100px;
+      font-size: large;
+      padding-top: 5px;
+      display: flex;
+      gap: 20px;
+    }
+
+    .self a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    .self a:hover {
+      color: blueviolet;
+    }
+
+    .contact-container {
+      max-width: 600px;
+      margin: 80px auto;
+      background-color: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-top: 15px;
+      font-size: 16px;
+      color: #444;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-top: 5px;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 120px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      background-color: blueviolet;
+      color: white;
+      border: none;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: darkviolet;
+    }
+
+    .bi {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px 0 10px 0;
+    }
+
+    .bi a {
+      color: black;
+      font-size: 24px;
+    }
+
+    .bi a:hover {
+      opacity: 0.7;
+    }
+
+    .bi a:nth-child(1) svg {
+      color: #333;
+    }
+
+    .bi a:nth-child(2) svg {
+      color: #0077B5;
+    }
+
+    .bi a:nth-child(3) svg {
+      color: #D44638;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      font-weight: 500;
+      color: #555;
+      padding-bottom: 20px;
+    }
+  </style>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+<body>
+
+  <nav>
+    <div class="self">
+      <a href="/home">Home</a>
+      <a href="/about">About</a>
+       <a href="/education">Education</a>
+      <a href="/contact">Contact</a>
+     
+    </div>
+  </nav>
+
+  <div class="contact-container">
+    <h2>Let's Connect</h2>
+    <form action="/submit" method="POST">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="+91-XXXXXXXXXX" required>
+
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Your message..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <div class="bi">
+    <a href="https://github.com/Sanjaym072002">
+      <i data-lucide="github"></i>
+    </a>
+    <a href="https://www.linkedin.com/feed/">
+      <i data-lucide="linkedin"></i>
+    </a>
+    <a href="mailto:sanjaym072002@gmail.com">
+      <i data-lucide="mail"></i>
+    </a>
+  </div>
+
+  <footer>
+    <p>© 2025 Sanjay</p>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
